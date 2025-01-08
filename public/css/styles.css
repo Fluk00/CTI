@@ -1,0 +1,330 @@
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular shape */
+    background-color: white; /* White circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animation */
+}
+
+.social-icon img {
+    width: 30px; /* Icon size */
+    height: 30px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%; /* Takes full width of the screen */
+    margin: 0;   /* Removes any margins around the container */
+    padding: 0;  /* Optionally, you can remove any padding if needed */
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 15px;
+}
+
+.hero .btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.25rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.hero .btn:hover {
+    background-color: #218838;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+/* Free Trial Form */
+.free-trial-form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.free-trial-form .form-control {
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.free-trial-form .form-select {
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.free-trial-form .btn {
+    background-color: #04BE02;
+    color: white;
+    padding: 15px;
+    font-size: 1.125rem;
+    border-radius: 8px;
+}
+
+
+.advantages-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #0f1f3a; /* Dark blue background */
+    color: white; /* White text */
+}
+
+.advantages-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 2rem; /* Space between cards */
+    max-width: 1200px; /* Limit grid width */
+    margin: 0 auto; /* Center the grid */
+}
+
+.advantage-card {
+    background: white; /* White card background */
+    color: #333; /* Dark text inside card */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.advantage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.advantage-card img {
+    width: 60px; /* Icon size */
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.advantage-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.advantage-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .advantages-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+}
+
+.features .feature-box {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features .feature-box img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.features .feature-box h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.features .feature-box p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Value to Customers Section */
+.value-to-customers {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.value-to-customers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.value-to-customers ul {
+    list-style-type: none;
+    font-size: 1.25rem;
+    padding: 0;
+}
+
+.value-to-customers li {
+    margin-bottom: 15px;
+}
+
+.value-to-customers .d-flex img {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+}
+
+/* Cyber Command Section */
+.cyber-command {
+    padding: 50px 0;
+}
+
+.cyber-command h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.cyber-command .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.cyber-command .card:hover {
+    transform: translateY(-10px);
+}
+
+.cyber-command .card-body img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.cyber-command .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    background-color: #001432;
+}
+
+footer .social-icon img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer .social-icon img:hover {
+    opacity: 0.8;
+}
+
+/* Button Style */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        margin-bottom: 20px;
+    }
+
+    .free-trial-form {
+        padding: 20px;
+    }
+
+    .advantages h2,
+    .features h2,
+    .value-to-customers h2,
+    .cyber-command h2 {
+        font-size: 2rem;
+    }
+
+    .card-body img {
+        width: 50px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.875rem;
+    }
+}
+

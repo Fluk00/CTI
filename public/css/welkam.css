@@ -1,0 +1,38 @@
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular shape */
+    background-color: white; /* White circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animation */
+}
+
+.social-icon img {
+    width: 30px; /* Icon size */
+    height: 30px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%; /* Takes full width of the screen */
+    margin: 0;   /* Removes any margins around the container */
+    padding: 0;  /* Optionally, you can remove any padding if needed */
+}
